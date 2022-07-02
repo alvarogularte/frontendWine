@@ -11,7 +11,7 @@ function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/clube">Clube</Nav.Link>
+            <Nav.Link href="/clube" data-testid='clube'>Clube</Nav.Link>
             <Nav.Link href="/loja">Loja</Nav.Link>
             <Nav.Link href="/produtores">Produtores</Nav.Link>
             <Nav.Link href="/ofertas">Ofertas</Nav.Link>
