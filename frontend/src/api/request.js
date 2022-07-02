@@ -9,11 +9,13 @@ export async function fetchProducts() {
 export async function fetchProductById(id) {
     const response = await fetch(BASE_URL);
     const products = await response.json();
-
-    for (let index = 0; index <= products.length; index += 1) {
-      if (products.item.id[index] === id) {
-        console.log('logando dentro do for', products.item[index]);
-        return products.item[index];
+    const productsArray = products.items;
+    
+    console.log(products.items);
+    for (let index = 0; index <= productsArray.length; index += 1) {
+      if (productsArray[index].id === id) {
+        console.log('logando dentro do for', productsArray[index].id);
+        return productsArray[index].id;
       }
     }
   console.log('logando fora do for', products.item);
