@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { Card, Col, Container, Row, Button, Pagination } from 'react-bootstrap';
+import { useDispatch } from 'react-redux';
 import { fetchProducts } from '../api/request';
+import { selectProduct } from '../app/slices/selections';
 
 function Products() {
   const [products, setProducts] = useState([]);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     fetchProducts()
@@ -47,6 +50,7 @@ function Products() {
                     { `não sócio R$ ${product.priceNonMember}` }
                   </Card.Subtitle>
                   <Button
+                    onClick={() => dispatch(selectProduct(product.id))}
                   >
                     Adicionar
                   </Button>
