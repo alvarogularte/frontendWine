@@ -24,24 +24,24 @@
 ###
 
 <p align="left">Primeiramente você deverá baixar o projeto para a sua máquina. Para isso você deve rodar o seguinte código: 
-'''
+```
 git clone git@github.com:alvarogularte/frontendWine.git
-'''
+```
 
 Em seguida digite:
-'''
+```
 cd frontend
-'''
+```
 
 Agora você precisará instalar as dependências do projeto, para isso é só rodar:
-'''
+```
 npm install
-'''
+```
 
 Para subir o projeto localmente rode o seguinte comando: 
-'''
+```
 npm start
-'''
+```
 
 Parabéns!!! 
 O projeto já está rodando em sua máquina local!!!!!</p>
