@@ -19,3 +19,13 @@
 .subtitle {
   text-transform: uppercase;
 }
+
+.button {
+  background-color: #7EBC43;
+  border-color: #7EBC43;
+  width: 100%;
+}
+
+.pagination {
+  justify-content: center;
+}
