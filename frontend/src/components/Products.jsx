@@ -55,6 +55,7 @@ function Products() {
                     { `não sócio R$ ${product.priceNonMember}` }
                   </Card.Subtitle>
                   <Button
+                    className='button'
                     onClick={() => dispatch(selectProduct(product.id))}
                   >
                     Adicionar
@@ -65,7 +66,7 @@ function Products() {
           ))}
         </Row>
       </Container>
-      <Pagination>
+      <Pagination className='pagination'>
         <Pagination.Item>{1}</Pagination.Item>
         <Pagination.Item>{2}</Pagination.Item>
         <Pagination.Item>{3}</Pagination.Item>

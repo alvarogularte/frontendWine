@@ -1,6 +1,6 @@
-import React from 'react'
-import { Container, Nav } from 'react-bootstrap'
-import Navbar from 'react-bootstrap/Navbar'
+import React from 'react';
+import { Container, Nav } from 'react-bootstrap';
+import Navbar from 'react-bootstrap/Navbar';
 
 function Header() {
   return (
@@ -22,7 +22,7 @@ function Header() {
             <Nav.Link eventKey={2} href="/conta">
               Minha conta
             </Nav.Link>
-            <Nav.Link href="/pesquisar">Logo Wine</Nav.Link>
+            <Nav.Link href="/pesquisar">Carrinho</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         </Container>
